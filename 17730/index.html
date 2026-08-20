@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow, noarchive">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Report — 17730 W Paseo Way | Team Minik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #0F2859;
+      --navyD: #091D45;
+      --teal:  #219075;
+      --pink:  #CB055C;
+      --bg:    #F3F5F9;
+      --card:  #FFFFFF;
+      --text:  #1A1A2E;
+      --sub:   #6B7280;
+      --border:#E5E7EB;
+    }
+
+    body { font-family:'Poppins',sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+
+    /* ── Sticky Bar ── */
+    .action-bar {
+      position:sticky; top:0; z-index:100;
+      background:var(--navyD); color:white;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:11px 28px;
+    }
+    .ab-brand { font-weight:800; font-size:14px; letter-spacing:.06em; }
+    .ab-brand span { color:var(--teal); }
+    .ab-title { font-size:13px; font-weight:500; opacity:.85; }
+    .ab-date  { font-size:12px; opacity:.55; }
+
+    /* ── Hero ── */
+    .hero { background:var(--navy); color:white; }
+    .hero-gradient { height:6px; background:linear-gradient(90deg,var(--navyD),var(--teal),var(--pink)); }
+    .hero-content { max-width:920px; margin:0 auto; padding:44px 28px 36px; }
+    .hero-eyebrow { font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--teal); margin-bottom:8px; }
+    .hero-address { font-size:34px; font-weight:800; line-height:1.15; margin-bottom:5px; }
+    .hero-city    { font-size:15px; font-weight:400; opacity:.65; margin-bottom:22px; }
+    .hero-meta    { display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+    .hero-price   { font-size:30px; font-weight:700; }
+    .hero-badge   { border:1px solid rgba(255,255,255,.22); border-radius:6px; padding:4px 13px; font-size:12px; font-weight:500; background:rgba(255,255,255,.07); }
+
+    /* ── Photo Strip ── */
+    .photo-strip { max-width:920px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr; gap:6px; padding:0 28px 30px; }
+    .photo-strip img, .photo-strip .ph { width:100%; border-radius:10px; object-fit:cover; display:block; }
+    .photo-strip img:first-child, .photo-strip .ph:first-child { aspect-ratio:16/9; }
+    .photo-strip img:not(:first-child), .photo-strip .ph:not(:first-child) { aspect-ratio:4/3; }
+    .ph { background:linear-gradient(135deg,rgba(255,255,255,.05),rgba(255,255,255,.12)); border:1px solid rgba(255,255,255,.12); }
+
+    /* ── Pulse Bar ── */
+    .pulse { background:var(--navyD); }
+    .pulse-inner { max-width:920px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid rgba(255,255,255,.08); }
+    .ps { padding:20px 16px; text-align:center; color:white; border-right:1px solid rgba(255,255,255,.08); }
+    .ps:last-child { border-right:none; }
+    .ps-val { font-size:30px; font-weight:800; line-height:1; margin-bottom:5px; }
+    .ps-lbl { font-size:10px; font-weight:600; letter-spacing:.13em; text-transform:uppercase; opacity:.55; }
+    .c-teal { color:var(--teal); }
+    .c-pink { color:var(--pink); }
+    .c-white { color:#ffffff; }
+
+    /* ── Main ── */
+    .main { max-width:920px; margin:0 auto; padding:44px 28px; }
+
+    /* ── Section ── */
+    .section { margin-bottom:52px; }
+    .sec-hd { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+    .sec-icon { width:38px; height:38px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+    .si-teal   { background:rgba(33,144,117,.12); }
+    .si-pink   { background:rgba(203,5,92,.1); }
+    .si-navy   { background:rgba(15,40,89,.1); }
+    .si-purple { background:rgba(88,28,135,.1); }
+    .sec-title { font-size:21px; font-weight:700; color:var(--navy); }
+    .sec-sub   { font-size:12px; color:var(--sub); font-weight:400; margin-top:1px; }
+
+    /* ── Stat Grid ── */
+    .stat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:18px; }
+    .sc { background:white; border-radius:12px; padding:18px 16px; border:1px solid var(--border); }
+    .sc-val { font-size:27px; font-weight:800; color:var(--navy); line-height:1.1; }
+    .sc-val.teal { color:var(--teal); }
+    .sc-val.pink { color:var(--pink); }
+    .sc-lbl { font-size:11px; font-weight:500; color:var(--sub); text-transform:uppercase; letter-spacing:.07em; margin-top:5px; }
+
+    /* ── Info Row ── */
+    .info-row { background:white; border-radius:12px; border:1px solid var(--border); padding:16px 20px; font-size:12px; line-height:1.9; color:var(--sub); }
+    .info-row strong { color:var(--navy); font-weight:600; }
+
+    /* ── Showing Log ── */
+    .sl { background:white; border-radius:12px; border:1px solid var(--border); overflow:hidden; }
+    .sl-head { background:var(--navy); color:white; display:grid; grid-template-columns:1.8fr 0.9fr 0.8fr 1.5fr; padding:10px 18px; font-size:10px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; }
+    .sl-row { border-bottom:1px solid var(--border); padding:18px; }
+    .sl-row:last-child { border-bottom:none; }
+    .sl-top { display:grid; grid-template-columns:1.8fr 0.9fr 0.8fr 1.5fr; align-items:center; margin-bottom:14px; }
+    .sl-date { font-weight:700; font-size:13px; }
+    .sl-time { font-size:11px; color:var(--sub); margin-top:2px; }
+    .sl-dur  { font-size:12px; color:var(--sub); }
+    .stars   { color:#F59E0B; font-size:15px; letter-spacing:1px; }
+    .star-sub { font-size:10px; color:var(--sub); margin-top:2px; }
+    .pills   { display:flex; gap:6px; flex-wrap:wrap; }
+    .pill    { border-radius:100px; padding:3px 11px; font-size:11px; font-weight:600; }
+    .pill-g  { background:rgba(33,144,117,.12); color:var(--teal); }
+    .pill-y  { background:rgba(245,158,11,.12); color:#B45309; }
+    .pill-r  { background:rgba(239,68,68,.12); color:#DC2626; }
+    .fb-box  { background:var(--bg); border-radius:8px; padding:13px 15px; font-size:12.5px; color:var(--text); line-height:1.65; }
+    .fb-lbl  { display:block; font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.11em; color:var(--sub); margin-bottom:5px; }
+
+    /* ── MLS Grid ── */
+    .mls-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .mls-card { background:white; border-radius:12px; border:1px solid var(--border); overflow:hidden; }
+    .mls-head { background:var(--navy); color:white; padding:12px 18px; font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
+    .pb { padding:13px 18px; border-bottom:1px solid var(--border); }
+    .pb:last-child { border-bottom:none; }
+    .pb-top { display:flex; justify-content:space-between; margin-bottom:7px; font-size:12px; }
+    .pb-name { font-weight:500; }
+    .pb-cnt  { font-weight:700; color:var(--navy); }
+    .bar-track { height:6px; background:var(--bg); border-radius:100px; overflow:hidden; }
+    .bar-fill  { height:100%; background:var(--teal); border-radius:100px; }
+    .pb-total  { display:flex; justify-content:space-between; align-items:center; padding:12px 18px; background:rgba(15,40,89,.04); font-size:13px; }
+    .pb-total-lbl { font-weight:700; color:var(--navy); }
+    .pb-total-val { font-size:17px; font-weight:800; color:var(--teal); }
+    .ar { display:flex; justify-content:space-between; align-items:center; padding:11px 18px; border-bottom:1px solid var(--border); font-size:13px; }
+    .ar:last-child { border-bottom:none; }
+    .ar-lbl { color:var(--sub); }
+    .ar-val { font-weight:700; color:var(--navy); }
+    .ar-val.hl { color:var(--teal); font-size:16px; }
+
+    /* ── Competing ── */
+    .comp-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    .comp-card { background:white; border-radius:10px; border:1px solid var(--border); padding:14px 16px; display:flex; justify-content:space-between; align-items:center; }
+    .comp-addr { font-size:12px; font-weight:600; color:var(--navy); }
+    .comp-det  { font-size:11px; color:var(--sub); margin-top:2px; }
+    .comp-price { font-size:14px; font-weight:700; color:var(--teal); text-align:right; }
+    .comp-status { font-size:10px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--teal); text-align:right; margin-top:2px; }
+
+    /* ── Open House ── */
+    .oh { background:white; border-radius:12px; border:1px solid var(--border); overflow:hidden; }
+    .oh-hd { background:linear-gradient(135deg,var(--navy),#1a3875); color:white; padding:22px 22px; display:flex; justify-content:space-between; align-items:center; }
+    .oh-hd-eyebrow { font-size:9px; text-transform:uppercase; letter-spacing:.15em; opacity:.55; margin-bottom:5px; }
+    .oh-hd-date  { font-size:15px; font-weight:700; }
+    .oh-hd-host  { font-size:11px; opacity:.55; margin-top:3px; }
+    .oh-att-num  { font-size:32px; font-weight:800; line-height:1; }
+    .oh-att-lbl  { font-size:9px; text-transform:uppercase; letter-spacing:.13em; opacity:.55; margin-top:3px; text-align:right; }
+    .oh-guest { padding:18px 22px; border-bottom:1px solid var(--border); }
+    .oh-guest:last-child { border-bottom:none; }
+    .oh-g-hd { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
+    .oh-num { background:var(--navy); color:white; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; flex-shrink:0; }
+    .oh-g-name { font-size:13px; font-weight:600; }
+    .oh-g-meta { font-size:11px; color:var(--sub); margin-top:2px; }
+    .interest-badge { display:inline-block; border-radius:100px; padding:2px 10px; font-size:10px; font-weight:700; margin-left:6px; }
+    .ib-red { background:rgba(239,68,68,.1); color:#DC2626; }
+    .ib-yel { background:rgba(245,158,11,.1); color:#B45309; }
+    .ib-grn { background:rgba(33,144,117,.1); color:var(--teal); }
+
+    /* ── Footer ── */
+    .footer { background:var(--navyD); color:white; padding:44px 28px 36px; }
+    .footer-inner { max-width:920px; margin:0 auto; }
+    .f-agents { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-bottom:34px; }
+    .f-agent { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:22px; }
+    .f-agent-name  { font-size:16px; font-weight:700; margin-bottom:2px; }
+    .f-agent-title { font-size:10px; text-transform:uppercase; letter-spacing:.1em; color:var(--teal); margin-bottom:14px; }
+    .f-agent-info  { font-size:12px; opacity:.6; line-height:1.9; }
+    .f-brand { text-align:center; border-top:1px solid rgba(255,255,255,.1); padding-top:22px; }
+    .f-brand-name { font-size:20px; font-weight:800; letter-spacing:.06em; }
+    .f-brand-name span { color:var(--teal); }
+    .f-brokerage { font-size:11px; opacity:.45; margin-top:5px; }
+    .f-disclaimer { font-size:10px; opacity:.28; margin-top:10px; line-height:1.55; }
+
+    @media (max-width:640px) {
+      .stat-grid      { grid-template-columns:repeat(2,1fr); }
+      .pulse-inner    { grid-template-columns:repeat(2,1fr); }
+      .mls-grid       { grid-template-columns:1fr; }
+      .comp-grid      { grid-template-columns:1fr; }
+      .f-agents       { grid-template-columns:1fr; }
+      .photo-strip    { grid-template-columns:1fr; }
+      .sl-head, .sl-top { grid-template-columns:1fr 1fr; }
+      .sl-head span:nth-child(3), .sl-head span:nth-child(4),
+      .sl-top > *:nth-child(3), .sl-top > *:nth-child(4) { display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- STICKY ACTION BAR -->
+<div class="action-bar">
+  <div class="ab-brand">TEAM <span>MINIK</span></div>
+  <div class="ab-title">Weekly Seller Activity Report</div>
+  <div class="ab-date">August 20, 2026</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Weekly Activity Report &nbsp;·&nbsp; Prepared by Team Minik</div>
+    <div class="hero-address">17730 W Paseo Way</div>
+    <div class="hero-city">Goodyear, AZ 85338</div>
+    <div class="hero-meta">
+      <div class="hero-price">$2,850,000</div>
+      <div class='hero-badge'>MLS #7008826</div>
+      <div class='hero-badge'>5 bd &nbsp;·&nbsp; 5 ba</div>
+      <div class="hero-badge" style="background:rgba(33,144,117,.2); border-color:var(--teal);">Active</div>
+    </div>
+  </div>
+  <div class="photo-strip">
+    <div class="ph" style="background:linear-gradient(135deg,rgba(33,144,117,.25),rgba(255,255,255,.05));"></div>
+    <div class="ph" style="background:linear-gradient(135deg,rgba(203,5,92,.2),rgba(255,255,255,.05));"></div>
+    <div class="ph" style="background:linear-gradient(135deg,rgba(15,40,89,.5),rgba(255,255,255,.05));"></div>
+  </div>
+</div>
+
+<!-- PULSE BAR -->
+<div class="pulse">
+  <div class="pulse-inner">
+    <div class="ps">
+      <div class="ps-val c-teal">22,325</div>
+      <div class="ps-lbl">Homes.com Views</div>
+    </div>
+    <div class="ps">
+      <div class="ps-val c-white">953</div>
+      <div class="ps-lbl">MLS Views</div>
+    </div>
+    <div class="ps">
+      <div class="ps-val c-pink">0</div>
+      <div class="ps-lbl">Showings</div>
+    </div>
+    <div class="ps">
+      <div class="ps-val c-white">—</div>
+      <div class="ps-lbl">OH Attendees</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+  <!-- Homes.com Analytics -->
+  <div class="section">
+    <div class="sec-hd">
+      <div class="sec-icon si-teal">🏠</div>
+      <div>
+        <div class="sec-title">Homes.com Analytics</div>
+        <div class="sec-sub">listing period</div>
+      </div>
+    </div>
+    <div class="stat-grid">
+      <div class="sc"><div class="sc-val teal">22,325</div><div class="sc-lbl">Total Views</div></div>
+      <div class="sc"><div class="sc-val">3</div><div class="sc-lbl">Saved as Favorite</div></div>
+      <div class="sc"><div class="sc-val">133</div><div class="sc-lbl">Detail Page Views</div></div>
+      <div class="sc"><div class="sc-val">1,244</div><div class="sc-lbl">Top of Search</div></div>
+    </div>
+    <div class="info-row">
+      <strong>Listing Agents:</strong> <strong>Zander Minik</strong> · (602) 618-2264 &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Michelle Minik</strong> · (623) 488-5432<br>
+      
+      
+    </div>
+  </div>
+
+  <!-- Aligned Showings -->
+  <div class="section">
+    <div class="sec-hd">
+      <div class="sec-icon si-pink">📅</div>
+      <div>
+        <div class="sec-title">Aligned Showings</div>
+        <div class="sec-sub">As of August 20, 2026</div>
+      </div>
+    </div>
+    <div class="stat-grid">
+      <div class="sc"><div class="sc-val">0</div><div class="sc-lbl">Total Showings</div></div>
+      <div class="sc"><div class="sc-val">0</div><div class="sc-lbl">Last 30 Days</div></div>
+      <div class="sc"><div class="sc-val">0</div><div class="sc-lbl">Last 7 Days</div></div>
+      <div class="sc"><div class="sc-val teal">N/A</div><div class="sc-lbl">Avg. Rating ★</div></div>
+    </div>
+    <div class="sl">
+      <div class="sl-head">
+        <span>Date &amp; Time</span>
+        <span>Duration</span>
+        <span>Rating</span>
+        <span>Response</span>
+      </div>
+      <div style="padding:22px 18px;color:#6B7280;font-size:13px;">No showings recorded this period.</div>
+    </div>
+  </div>
+
+  <!-- MLS Activity -->
+  <div class="section">
+    <div class="sec-hd">
+      <div class="sec-icon si-navy">📊</div>
+      <div>
+        <div class="sec-title">MLS Activity</div>
+        <div class="sec-sub">ARMLS · Flexmls &nbsp;|&nbsp; as of August 20, 2026</div>
+      </div>
+    </div>
+    <div class="mls-grid">
+      <div class="mls-card">
+        <div class="mls-head">Views by Platform</div>
+        
+        <div class="pb">
+          <div class="pb-top">
+            <span class="pb-name">Flexmls</span>
+            <span class="pb-cnt">770</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+        </div>
+
+        <div class="pb">
+          <div class="pb-top">
+            <span class="pb-name">Flexmls Email</span>
+            <span class="pb-cnt">120</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:16%"></div></div>
+        </div>
+
+        <div class="pb">
+          <div class="pb-top">
+            <span class="pb-name">Flexmls Portal</span>
+            <span class="pb-cnt">10</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:1%"></div></div>
+        </div>
+
+        <div class="pb">
+          <div class="pb-top">
+            <span class="pb-name">Flexmls IDX</span>
+            <span class="pb-cnt">53</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width:7%"></div></div>
+        </div>
+        <div class="pb-total">
+          <span class="pb-total-lbl">Total MLS Views</span>
+          <span class="pb-total-val">953</span>
+        </div>
+      </div>
+      <div class="mls-card">
+        <div class="mls-head">Agent Actions &amp; Ratings</div>
+        <div class="ar"><span class="ar-lbl">Shared (90 days)</span><span class="ar-val hl">20</span></div>
+        <div class="ar"><span class="ar-lbl">Saved by Agents</span><span class="ar-val">0</span></div>
+        <div class="ar"><span class="ar-lbl">Hidden by Agents</span><span class="ar-val">0</span></div>
+        <div class="ar"><span class="ar-lbl">Recommended by Agents</span><span class="ar-val">0</span></div>
+        <div class="ar"><span class="ar-lbl">Showing Requests</span><span class="ar-val">0</span></div>
+        <div class="ar"><span class="ar-lbl">Contact Agent</span><span class="ar-val">0</span></div>
+        <div class="ar"><span class="ar-lbl">General Messages</span><span class="ar-val">0</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Competing Listings -->
+  <div class="section">
+    <div class="sec-hd">
+      <div class="sec-icon si-purple">🏘️</div>
+      <div>
+        <div class="sec-title">Competing Listings</div>
+        <div class="sec-sub">Homes buyers viewed alongside yours on the MLS</div>
+      </div>
+    </div>
+    <div class="comp-grid">
+      
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">17725 W Estes Way, Goodyear</div>
+          <div class="comp-det">MLS #6851327 &nbsp;·&nbsp; 4 bd / 5 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$2,227,500</div>
+          <div class="comp-status">Active</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">17929 W Estes Way, Goodyear</div>
+          <div class="comp-det">MLS #6887765 &nbsp;·&nbsp; 4 bd / 4 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$2,542,410</div>
+          <div class="comp-status">Active</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">17837 W Estes Way, Goodyear</div>
+          <div class="comp-det">MLS #6855087 &nbsp;·&nbsp; 5 bd / 6 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$2,650,000</div>
+          <div class="comp-status">Cancelled</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">9233 S Krista Dr E, Goodyear</div>
+          <div class="comp-det">MLS #6728156 &nbsp;·&nbsp; 4 bd / 5 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$1,645,000</div>
+          <div class="comp-status">Pending</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">8596 S San Filipe Dr, Goodyear</div>
+          <div class="comp-det">MLS #6989613 &nbsp;·&nbsp; 4 bd / 5 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$1,200,000</div>
+          <div class="comp-status">Active</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">18578 W Sapium Way, Goodyear</div>
+          <div class="comp-det">MLS #6985517 &nbsp;·&nbsp; 4 bd / 4 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$1,250,000</div>
+          <div class="comp-status">Active</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">18632 W Santa Irene Dr, Goodyear</div>
+          <div class="comp-det">MLS #7018750 &nbsp;·&nbsp; 5 bd / 4 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$799,900</div>
+          <div class="comp-status">Cancelled</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">17934 W Estes Way, Goodyear</div>
+          <div class="comp-det">MLS #6910513 &nbsp;·&nbsp; 3 bd / 3 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$1,349,000</div>
+          <div class="comp-status">Closed</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">8827 S Santa Elizabeth Dr, Goodyear</div>
+          <div class="comp-det">MLS #7027601 &nbsp;·&nbsp; 5 bd / 5 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$2,300,000</div>
+          <div class="comp-status">Temp Off Market</div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div>
+          <div class="comp-addr">18344 W Santa Irene Dr, Goodyear</div>
+          <div class="comp-det">MLS #7011476 &nbsp;·&nbsp; 5 bd / 5 ba</div>
+        </div>
+        <div>
+          <div class="comp-price">$925,000</div>
+          <div class="comp-status">Active</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div><!-- /main -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="f-agents">
+      
+      <div class="f-agent">
+        <div class="f-agent-name">Zander Minik</div>
+        <div class="f-agent-title">Listing Agent &nbsp;·&nbsp; Team Minik</div>
+        <div class="f-agent-info">
+          📞 (602) 618-2264<br>
+          ✉ zander@teamminik.com<br>
+          License #SA712480000
+        </div>
+      </div>
+
+      <div class="f-agent">
+        <div class="f-agent-name">Michelle Minik</div>
+        <div class="f-agent-title">Listing Agent &nbsp;·&nbsp; Team Minik</div>
+        <div class="f-agent-info">
+          📞 (623) 488-5432<br>
+          ✉ michelle@teamminik.com<br>
+          License #SA523526000
+        </div>
+      </div>
+    </div>
+    <div class="f-brand">
+      <div class="f-brand-name">TEAM <span>MINIK</span></div>
+      <div class="f-brokerage">Realty of America LLC &nbsp;·&nbsp; 1300 S Litchfield Rd Ste 220P, Goodyear, AZ 85338</div>
+      <div class="f-disclaimer">This report was prepared exclusively for the seller of 17730 W Paseo Way, Goodyear, AZ 85338. All data sourced from ARMLS/Flexmls, Aligned Showings, and Homes.com as of August 20, 2026. Information deemed reliable but not guaranteed. © 2026 Team Minik.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
